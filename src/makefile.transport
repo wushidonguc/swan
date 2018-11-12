@@ -1,0 +1,52 @@
+IDIR =../include
+ODIR=obj
+#LDIR =../lib
+
+CC=mpic++
+
+CFLAGS=-I$(IDIR)
+#CFLAGS +=-I$(LDIR)
+CFLAGS +=-Wall# Turn on all warning notifications
+CFLAGS +=-std=c++0x # Using lastest C++ standards
+LDFLAGS=-lm# Link the math library
+LDFLAGS +=-larmadillo # Link the armadillo linear algebra library
+
+
+_DEPS = \
+Graphene.h \
+MoS2.h \
+Material.h \
+Parameters.h \
+CentralRegionEdgeContact.h \
+Lead.h \
+DeviceEdgeContact.h \
+FixedChargeProfile.h \
+ChargeProfile.h \
+PotentialProfile.h \
+OneDimRange.h \
+EnergyRange.h \
+ChargeSolver.h \
+PoissonSolver.h \
+SelfConsistentSolver.h \
+TransportSolver.h \
+Output.h \
+Utils.h
+
+DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
+
+_OBJ = $(_DEPS:.h=.o)
+_OBJ += transport.o
+
+OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
+
+$(ODIR)/%.o: %.cpp $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+transport: $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS) $(LDFLAGS)
+
+.PHONY: clean
+
+clean:
+	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
+
