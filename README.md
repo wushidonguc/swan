@@ -1,6 +1,6 @@
 # Swan
 
-**Swan** (**S**elf-consistent **wan**nier-function-based quantum transport solver) is an open-source C++ software suitable for large-scale atomistic simulations of electronic structures and transport properties for nano-devices. (Also shown on my personal website at https://wushidonguc.github.io/swan/)
+**Swan** (**S**elf-consistent **wan**nier-function-based quantum transport solver) is an open-source C++ software suitable for large-scale atomistic simulations of electronic structures and transport properties for nano-devices.
 By using a Wannier function basis (as implemented in the [Wannier90](http://wannier.org) package) to accurately describe the electronic bands, our code is able to efficiently model device structures with first-principles accuracy at a minimal cost of tight-binding calculations.
 It couples the Keldysh non-equilibrium Green's function formalism and Poisson solver to generate the inhomogeneous charge densities self-consistently with the electrostatic potential profile for the simulated device region. The parallel implementation of the code uses the standard Message Passing Interface (MPI).
 
