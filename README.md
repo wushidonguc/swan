@@ -10,7 +10,7 @@ It couples the Keldysh non-equilibrium Green's function formalism and Poisson so
 ![swan_pipeline](https://wushidonguc.github.io/assets/swan_pipeline.png)
 
 
-For more details, please refer to the related paper "Quantum electron transport in ohmic edge contacts between two-dimensional materials" ([https://arxiv.org/abs/1811.02135](https://arxiv.org/abs/1811.02135)).
+For more details, please refer to the related paper "Quantum electron transport in ohmic edge contacts between two-dimensional materials" ([https://doi.org/10.1021/acsaelm.9b00095](https://doi.org/10.1021/acsaelm.9b00095)).
 
 Author: Wushi Dong (dongws@uchicago.edu) of the Physics Department at The University of Chicago. (Advisor: Peter B. Littlewood)
 
