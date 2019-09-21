@@ -5,9 +5,9 @@ INSTALL_DIR=../bin
 
 
 # CREATE OUT/ DIRECTORY
-if [ ! -d out ]; then
+if [ ! -d out ];then
   mkdir -p out
-
+fi
 
 # RUN
 
