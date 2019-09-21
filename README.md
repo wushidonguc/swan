@@ -18,9 +18,7 @@ The author would like to acknowledge the C++ linear algebra library Armadillo.
 
 # Installation
 
-Please make sure that MPI is installed to enable running the code in parallel.
-
-Then download and install the Armadillo package via the webpage:
+Download and install the Armadillo package via the webpage:
 
 [http://arma.sourceforge.net/download.html](http://arma.sourceforge.net/download.html)
 
@@ -29,6 +27,8 @@ Install Swan by running the "install.sh" file provided in the package:
 ```
 sh install.sh
 ```
+
+If you want to run the code in parallel, please make sure that relevant MPI implementation is installed.
 
 # Example run
 
