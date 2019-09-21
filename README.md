@@ -18,11 +18,13 @@ The author would like to acknowledge the C++ linear algebra library Armadillo.
 
 # Installation
 
-Please install the Armadillo package via the download page:
+Please make sure that MPI is installed to enable running the code in parallel.
+
+Then download and install the Armadillo package via the webpage:
 
 [http://arma.sourceforge.net/download.html](http://arma.sourceforge.net/download.html)
 
-Then install Swan by running the installation file provided in the package:
+Install Swan by running the "install.sh" file provided in the package:
 
 ```
 sh install.sh
@@ -30,7 +32,9 @@ sh install.sh
 
 # Example run
 
-To demonstrate the usage of our code, we provide an example run which simulates the 2D edge contact structure studied in our paper ([https://arxiv.org/abs/1811.02135](https://arxiv.org/abs/1811.02135)). To run this example:
+To demonstrate the usage of our code, we provide an example run which simulates the 2D edge contact structure studied in our paper ([https://arxiv.org/abs/1811.02135](https://arxiv.org/abs/1811.02135)). 
+
+To run this example: (Make sure MPI is installed since this example will use mpirun)
 
 ```
 cd example_run/
